@@ -1,0 +1,132 @@
+LOG for 200 hidden Units:
+iteration=      0 recon_loss = 1971.9764
+Energy:  -20.592859244289933
+iteration=      1 recon_loss = 1797.3793
+Energy:  -24.87430570601869
+iteration=      2 recon_loss = 1707.8520
+Energy:  -49.81193700088414
+iteration=      3 recon_loss = 1653.2813
+Energy:  -71.83303800456854
+iteration=      4 recon_loss = 1616.1298
+Energy:  -92.07820131728604
+iteration=      5 recon_loss = 1589.3891
+Energy:  -112.59110310047477
+iteration=      6 recon_loss = 1568.8164
+Energy:  -129.79529595624035
+iteration=      7 recon_loss = 1552.1395
+Energy:  -145.86276058575183
+iteration=      8 recon_loss = 1538.7857
+Energy:  -161.16648586533304
+iteration=      9 recon_loss = 1526.7735
+Energy:  -177.43186441747505
+iteration=     10 recon_loss = 1516.6725
+Energy:  -191.1496410724604
+iteration=     11 recon_loss = 1509.5012
+Energy:  -208.22860936509124
+iteration=     12 recon_loss = 1499.8487
+Energy:  -216.95515074871798
+iteration=     13 recon_loss = 1494.8583
+Energy:  -228.0031205355189
+iteration=     14 recon_loss = 1490.4861
+Energy:  -237.8605257927857
+iteration=     15 recon_loss = 1484.2736
+Energy:  -248.32904117039362
+iteration=     16 recon_loss = 1481.3465
+Energy:  -259.34070527230267
+iteration=     17 recon_loss = 1473.7751
+Energy:  -267.45348002159534
+iteration=     18 recon_loss = 1470.7202
+Energy:  -277.28722213717623
+iteration=     19 recon_loss = 1468.0462
+Energy:  -288.6097833816766
+iteration=     20 recon_loss = 1464.5664
+Energy:  -298.5324231662866
+
+LOG for 350 hidden Units:
+iteration=      0 recon_loss = 1875.6630
+Energy:  -32.1862259867332
+iteration=      1 recon_loss = 1705.0027
+Energy:  -47.78367475126157
+iteration=      2 recon_loss = 1624.3769
+Energy:  -83.37309985993058
+iteration=      3 recon_loss = 1577.9398
+Energy:  -127.87636302973296
+iteration=      4 recon_loss = 1550.7285
+Energy:  -173.15911151725862
+iteration=      5 recon_loss = 1528.3295
+Energy:  -217.63723176745813
+iteration=      6 recon_loss = 1506.9846
+Energy:  -250.02431021828724
+iteration=      7 recon_loss = 1493.8844
+Energy:  -286.123556972606
+iteration=      8 recon_loss = 1486.7051
+Energy:  -320.0577462315551
+iteration=      9 recon_loss = 1480.3193
+Energy:  -349.5756987585543
+iteration=     10 recon_loss = 1468.7623
+Energy:  -378.8771148305031
+iteration=     11 recon_loss = 1461.6101
+Energy:  -403.9421087637989
+iteration=     12 recon_loss = 1459.1744
+Energy:  -433.15468223732773
+iteration=     13 recon_loss = 1451.6122
+Energy:  -457.1134724874771
+iteration=     14 recon_loss = 1446.5624
+Energy:  -482.1430634415511
+iteration=     15 recon_loss = 1445.5206
+Energy:  -509.28397192448375
+iteration=     16 recon_loss = 1441.8554
+Energy:  -528.5005988432392
+iteration=     17 recon_loss = 1438.8678
+Energy:  -551.2201858631884
+iteration=     18 recon_loss = 1433.2529
+Energy:  -572.7281511800858
+iteration=     19 recon_loss = 1431.5288
+Energy:  -589.8202862606926
+iteration=     20 recon_loss = 1428.7293
+Energy:  -609.9559854081385
+
+LOG for 500 hidden Units:
+iteration=      0 recon_loss = 1822.6754
+Energy:  -26.360937676356457
+iteration=      1 recon_loss = 1661.6055
+Energy:  -51.46813110407306
+iteration=      2 recon_loss = 1588.7641
+Energy:  -96.98388435982929
+iteration=      3 recon_loss = 1545.3183
+Energy:  -141.56785150347534
+iteration=      4 recon_loss = 1525.4173
+Energy:  -195.4119992071006
+iteration=      5 recon_loss = 1506.7058
+Energy:  -250.57917716109932
+iteration=      6 recon_loss = 1492.0052
+Energy:  -310.0743550780858
+iteration=      7 recon_loss = 1482.5123
+Energy:  -365.94370950074745
+iteration=      8 recon_loss = 1471.6118
+Energy:  -417.6213089498882
+iteration=      9 recon_loss = 1463.1340
+Energy:  -464.56108521583815
+iteration=     10 recon_loss = 1455.8828
+Energy:  -500.15620414264754
+iteration=     11 recon_loss = 1451.0479
+Energy:  -536.7910478856721
+iteration=     12 recon_loss = 1448.0203
+Energy:  -570.6601953983343
+iteration=     13 recon_loss = 1445.0194
+Energy:  -610.1523285150306
+iteration=     14 recon_loss = 1437.5235
+Energy:  -647.0489523530996
+iteration=     15 recon_loss = 1435.2588
+Energy:  -676.6004172057648
+iteration=     16 recon_loss = 1432.2869
+Energy:  -707.5938494573636
+iteration=     17 recon_loss = 1425.9201
+Energy:  -733.9292006371038
+iteration=     18 recon_loss = 1424.3222
+Energy:  -762.0387287216341
+iteration=     19 recon_loss = 1421.2314
+Energy:  -791.0359896767004
+iteration=     20 recon_loss = 1420.3372
+Energy:  -813.5270923654818
+

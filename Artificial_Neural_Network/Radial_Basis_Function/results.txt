@@ -1,0 +1,38 @@
+3.1:
+
+From the book, use std = max_dist/sqrt(2*num_hidden)
+Average absolute residual difference, err1=sin2x,err2=square
+
+6 rbf nodes with std=0.5pi/sqrt(12)
+Err1:  0.026947664742659614
+Err2:  0.3158096940374646
+
+6 rbf nodes with std=2pi/sqrt(12)
+Err1:  0.053962973924872995
+Err2:  0.33412019841956625
+
+9 rbf nodes with std=pi/(sqrt(18):
+Err1:  0.017928116186338702
+Err2:  0.2921599184690911
+
+17 rbf nodes with std=2pi/sqrt(34)
+Err1:  6.756748845313318e-07
+Err2:  0.21079647730267237
+
+44 hidden, std=pi/sqrt(88)
+Err1:  1.7160128127149622e-05
+Err2:  0.10071967832101066
+
+comments: more hidden nodes gives better results to about 44. standard deviation can generally be tuned as well for better results. Can't get a better absolute average residual error than 0.1 for the square function without transforming it. Maybe because of soft boundaries between rbfs?
+
+can transform the square function to 1 if bigger than 0, and -1 if less. Still need 24 rbf neurons to not underfit where the 1 and -1 lines should be. Can be useful for classification applications, e.g diagnosis?
+
+3.2:
+
+- units/widths: in general it is better with more hidden units up until 42. Higher width generally gives better results, up until about 0.7 std dev. Can use both average residual, or just the mse. Batch is superior to sequential. Sequential is not regularised enough or too much regularised. Also tried to normalize the rbf functions h(x-mu) but didnt make a difference.
+
+- It converges quite fast, need max 10 epochs. Learning rate should be about 0.001. Higher will overshoot and makes weights explode. Lower, i.e 0.0001 gives just a straight line since the weights are initialised with N(0,0.1). Since sequential is not the real gradient it is important to tune the learning rate to not miss the local minimas. 
+
+- seems to give better performance. Needs to be wider with fewer RBFs in order to capture all points. Seems to control the regularisation. Lower width gives more regularisation.
+
+- placed every RBF node width an even interval width in the domain [0,2pi]. about 45-50 % better than random placement for more than 16 nodes, 15-30% better for less than 16. Makes sense since lower number of nodes are more sparse anyways.

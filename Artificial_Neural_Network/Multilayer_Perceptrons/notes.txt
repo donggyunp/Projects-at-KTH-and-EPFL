@@ -1,0 +1,56 @@
+one layer linearly separable
+
+- Perceptron very fast but can get bad solutions since stops when all correctly classified. 
+- Sequential + batch convergence dependent on random init. 
+- sequential can have a higher learning rate and therefore convergence faster than batch that overshoots, which makes sense since sequential is not as close to Gradient descent and have smaller updates.
+- Convergence+results Highly dependent on learning rate and random init. Perceptron stops at bad solutions.
+- perceptron without bias can only convergence if lin.sep with line through origin.
+
+one layer non linearly separable
+
+- The decision boundary gets skewed / biased towards the training data class with less samples so more points are predicted as dominant samples. 
+- Generaliation affected negatively
+
+two layer linearly non sep data
+
+- overfitting occurs since validation error increases if continuing training.
+- number of hidden neuron didn't make any big difference, just a slighter bigger overfit with more
+- generalisation affected negatively by biased sampling. Point of learning observable (see plot)
+
+funcapprox
+
+1. 
+- 25 hidden layers worked the best for us. The points comes closer to a subspace (too packed in the activation function) when using small number of hidden neurons.
+- 50 neurons even better
+- small # neurons -> no generalisation. Just learns some linear pattern.
+- too many neurons overfits
+
+2. 20 % validation seems to be the best. Less training data gives worse generalisation for the best architecture.
+
+3. no, val mse is getting higher when increasing learn rate
+
+part 2
+
+__No.1__
+- See plots in saved_plots
+
+__No.2__
+- tried architectures, all from exercise and (9,4) hidden neurons
+- We used early stopping on validation, by equvialence of validation error, didn't stop everytime (try epsilon suroiunding)
+- Small variation seemed to have little inluence, changing the mean of the normal distr. bias init. gave bad results
+
+ __No.3__ Test performance
+Best validation error 0.177720844745636 found at epoch 59 for model [[5, 9], [9, 4]]
+Test error 0.2186277061700821  for model [[5, 9], [9, 4]]
+Best validation error 0.27170416712760925 found at epoch 59 for model [[5, 4], [4, 4]]
+Test error 0.28372371196746826  for model [[5, 4], [4, 4]]
+- The validation error seems not to be a good estimation of the test error, since the validation error often was bigger for architectures with a lower test error
+
+__No.4__
+Observations:
+- the noise shifted the plot downwards on the y-achsis
+- decresed penalty to 0.0005, noise 0.05, h2=15n, pest error decreased with noise and adjusted penalty term
+Best validation error 0.15826262533664703 found at epoch 59 for model [[5, 9], [9, 15]]
+Test error 0.19503164291381836  for model [[5, 9], [9, 15]]
+Best validation error 0.12140902876853943 found at epoch 59 for model [[5, 4], [4, 15]]
+Test error 0.2261156290769577  for model [[5, 4], [4, 15]]
